@@ -20,14 +20,21 @@ public class Main {
 
         int min = salary.get(0);
         int max = salary.get(0);
+        int sum = 0;
+
         for (Integer i: salary) {
+            sum = sum + i;
             if(i < min)
                 min = i;
             if(i > max)
                 max = i;
+
         }
+
+        int med = sum - (max + min);
         System.out.println("минимальное число: " + min);
         System.out.println("максимальное число: " + max);
+        System.out.println("медиальное  число: " + med);
 
 
     }
